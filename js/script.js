@@ -78,7 +78,6 @@ const projectData = {
                         <li>Shopping cart and wishlist functionality</li>
                         <li>Secure user authentication and authorization</li>
                         <li>Order management and tracking system</li>
-                        <li>Payment gateway integration</li>
                         <li>Admin dashboard for inventory management</li>
                         <li>Responsive design for all devices</li>
                     </ul>
@@ -89,7 +88,6 @@ const projectData = {
                         <li>Node.js and Express.js backend architecture</li>
                         <li>MongoDB with Mongoose ODM</li>
                         <li>JWT-based authentication system</li>
-                        <li>Stripe payment integration</li>
                         <li>Cloudinary for image management</li>
                     </ul>
                 `,
