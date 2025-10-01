@@ -1,0 +1,35 @@
+body {
+  box-sizing: border-box;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #0D1117 0%, #161B22 50%, #0D1117 100%);
+}
+
+.tech-shadow {
+  box-shadow: 0 10px 25px rgba(6, 182, 212, 0.1);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(6, 182, 212, 0.2);
+}
+
+.glow-effect {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #06B6D4, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
