@@ -1,4 +1,4 @@
-// Mobile menu toggle
+
 const mobileMenuBtn = document.getElementById("mobile-menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 
@@ -6,7 +6,7 @@ mobileMenuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
-// Smooth scrolling for navigation links
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -16,22 +16,18 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         behavior: "smooth",
         block: "start",
       });
-      // Close mobile menu if open
       mobileMenu.classList.add("hidden");
     }
   });
 });
 
-// Download CV functionality
 document.getElementById("download-cv").addEventListener("click", function () {
-  // Direct download from Google Drive
+
   const driveUrl =
     "https://drive.google.com/drive/folders/1C1gzgjuwmasLayTIwf7I0f8uF0Ql2rar";
 
-  // Open the download link in a new tab
   window.open(driveUrl, "_blank");
 
-  // Show success message
   const button = this;
   const originalText = button.textContent;
   button.textContent = "Opening...";
@@ -42,7 +38,7 @@ document.getElementById("download-cv").addEventListener("click", function () {
   }, 2000);
 });
 
-// Project modal functionality
+
 const projectData = {
   // 'roaring-trends': {
   //     title: 'Roaring Trends (FYP)',
@@ -243,7 +239,7 @@ function closeModal() {
   document.body.style.overflow = "auto";
 }
 
-// Close modal when clicking outside
+
 document
   .getElementById("project-modal")
   .addEventListener("click", function (e) {
@@ -252,7 +248,6 @@ document
     }
   });
 
-// Close modal with Escape key
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
     closeModal();
@@ -297,7 +292,7 @@ document
     setTimeout(() => messageDiv.classList.add("hidden"), 5000);
   });
 
-// Add scroll effect to navigation
+
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("nav");
   if (window.scrollY > 100) {
@@ -307,7 +302,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Add typing effect to the tagline
+
 const tagline = document.querySelector("section#home p");
 const text = tagline.textContent;
 tagline.textContent = "";
@@ -321,7 +316,6 @@ function typeWriter() {
   }
 }
 
-// Start typing effect after page loads
 setTimeout(typeWriter, 1000);
 
 // (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');

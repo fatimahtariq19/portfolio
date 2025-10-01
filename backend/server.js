@@ -22,7 +22,7 @@ app.post("/send-email", async (req, res) => {
 
     const mailOptions = {
       from: email,
-      to: "fatimahtariq687@gmail.com", // Your receiving email
+      to: "fatimahtariq687@gmail.com", 
       subject: subject,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
